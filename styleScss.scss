@@ -1,0 +1,446 @@
+$grey: #A3B8CC;
+$orange: #FF7F22;
+
+@mixin titles__h2 {
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+@mixin titles__h3 {
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+@mixin price {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #A3B8CC;
+    margin: auto;
+    padding-bottom: 24px;
+}
+
+@mixin button__market {
+    & {
+        display: inline-block;
+        width: 200px;
+        height: 48px;
+        margin: auto;
+        padding: 0;
+        border: none;
+        border-radius: 60px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #e68c4c;
+        background-image: linear-gradient(#FF7F22, #FF5722);
+        cursor: pointer;
+        user-select: none;
+        appearance: none;
+
+        &:hover {
+            background-image: none;
+            transition: all 0.7s;
+            background-color: #FF5722;
+            // box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+        }
+
+        &:active {
+            background-image: none;
+            background-color: #FF7F22;
+            color: #fff;
+        }
+
+        &:disabled {
+            background-image: none;
+            background-color: #4C5865;
+            color: #7D90A6;
+        }
+
+    }
+
+}
+
+@mixin button__stock {
+    & {
+        display: inline-block;
+        width: 200px;
+        height: 48px;
+        margin: auto;
+        padding: 0;
+        border: 2px solid;
+        border-radius: 60px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+        color: #7CDAF9;
+        background-color: transparent;
+        // background-image: 
+        cursor: pointer;
+        user-select: none;
+        appearance: none;
+
+        &:hover {
+            background-image: none;
+            transition: all 0.7s;
+            background-color: #7CDAF9;
+            color: #212529;
+            border: none;
+        }
+
+        &:active {
+            background-image: none;
+        }
+
+        &:disabled {
+            background-image: none;
+            // background-color: #4C5865;
+            color: #4C5865;
+        }
+
+    }
+
+}
+
+body {
+    font-family: Montserrat;
+    background: radial-gradient(82.33% 70.44% at 50% 0%, #26394D 0%, #212529 100%);
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1016px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        color: white;
+    }
+}
+
+.content {
+    margin-left: 130px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+    background:
+        url(img/Subtract.png) 520px 97px no-repeat,
+        url(img/Subtract_2.png) 716px 198px no-repeat,
+        url(img/Ellipse_4.svg) 551px 100px no-repeat;
+}
+
+.about__title {
+    max-width: 470px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 72px;
+    color: #fff;
+    margin: 0;
+    padding-top: 120px;
+}
+
+.about__class {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: $grey;
+}
+
+.vallet {
+    & h2 {
+        @include titles__h2;
+        margin-top: 100px;
+    }
+
+    & .coin {
+        margin-top: 60px;
+        height: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    & .coin__img {
+        // margin-right: 10px;
+        position: relative;
+        margin-left: -7px;
+        z-index: auto;
+    }
+
+    & .biorobo {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        color: $grey;
+        margin-top: 24px;
+    }
+
+    & .check {
+        &-link {
+            color: $orange;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .checkbox-label {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+            padding-left: 19px;
+
+            & input[type=checkbox] {
+                appearance: none;
+                vertical-align: middle;
+                width: 32px;
+                height: 32px;
+                outline: none;
+                transition: 0.3s ease;
+                background: url(img/CheckNormal.svg) no-repeat;
+                cursor: pointer;
+            }
+
+            & input[type=checkbox]:checked {
+                background-image: url(img/CheckActive.svg);
+            }
+
+            & input[type=checkbox]:active {
+                background-image: url(img/CheckActive.svg);
+            }
+
+            & input[type=checkbox]:hover {
+                filter: brightness(80%);
+            }
+
+            & input[type=checkbox]:disabled {
+                cursor: default;
+                background-image: url(img/CheckDis.svg)
+            }
+        }
+    }
+}
+
+.market {
+    & h2 {
+        @include titles__h2;
+        margin-top: 104px;
+    }
+
+    & .buttons__market {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+
+        &.accessories__biomeh {
+            display: flex;
+        }
+
+        & .biomeh__icon {
+            width: 236px;
+            height: 128px;
+            background: url(img/biomehIcon.png) no-repeat center;
+            filter: drop-shadow(0px 8px 30px #FF7F22);
+            margin: 0 auto;
+        }
+
+        & .cpu__icon {
+            width: 236px;
+            height: 128px;
+            background: url(img/CPUicon.png) no-repeat center;
+            filter: drop-shadow(0px 8px 30px #FF7F22);
+            margin: 0 auto;
+        }
+
+        & .soul__icon {
+            position: relative;
+            width: 236px;
+            height: 128px;
+            background: url(img/Soulicon.png) no-repeat center;
+            filter: drop-shadow(0px 8px 30px #FF7F22);
+            margin: 0 auto;
+        }
+
+        & .border {
+            width: 88px;
+            height: 88px;
+
+            position: absolute;
+            top: 14px;
+            left: 70px;
+            border: 3px solid #FF7F22;
+            border-radius: 50%;
+        }
+
+        & h3 {
+            @include titles__h3;
+        }
+
+        & .accessories__price {
+            @include price;
+        }
+
+        & .market7 {
+            @include button__market;
+        }
+
+        & .market5 {
+            @include button__market;
+        }
+
+        & .market25 {
+            @include button__market;
+        }
+    }
+}
+
+.stock {
+    & h2 {
+        @include titles__h2;
+        margin-top: 100px;
+    }
+
+    & .buttons__stock {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+
+        &.stock__biomeh {
+            display: flex;
+        }
+
+        & h3 {
+            @include titles__h3;
+        }
+
+        & .stock__price {
+            @include price;
+            padding-bottom: 15px;
+        }
+
+        & .thing {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #fff;
+            margin: auto;
+            padding-bottom: 24px;
+        }
+
+        & .sale5 {
+            @include button__stock;
+        }
+
+        & .sale3 {
+            @include button__stock;
+        }
+
+        & .sale15 {
+            @include button__stock;
+        }
+    }
+
+}
+
+.production {
+    & h2 {
+        @include titles__h2;
+        margin-top: 100px;
+    }
+
+    & h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+        margin: auto;
+        padding-top: 16px;
+    }
+
+    & .type__biorobo {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        flex: 0 1 2;
+    }
+
+    & .buttons__type {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #fff;
+        padding-top: 16px;
+        width: 236px;
+    }
+
+    & label {
+        padding-left: 10px;
+        padding-left: 8px;
+        cursor: pointer;
+    }
+
+    & .meh img {
+        // padding-left: 10px;
+        margin-bottom: 16px;
+        cursor: pointer;
+    }
+
+    & .cpu1 img {
+        // padding-left: 10px;
+        margin-bottom: 16px;
+        cursor: pointer;
+    }
+
+    & .soul1 img {
+        // padding-right: 10px;
+        margin-bottom: 61px;
+        cursor: pointer;
+    }
+
+    & .buttons__pictures {
+        width: 236px;
+    }
+
+    & .man {
+        width: 236px;
+        height: 320px;
+    }
+
+    & .production__button {
+        margin-top: 77px;
+    }
+}

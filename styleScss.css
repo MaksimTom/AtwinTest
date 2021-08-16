@@ -1,0 +1,553 @@
+body {
+  font-family: Montserrat;
+  background: radial-gradient(82.33% 70.44% at 50% 0%, #26394D 0%, #212529 100%);
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1016px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header p {
+  color: white;
+}
+
+.content {
+  margin-left: 130px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  background: url(img/Subtract.png) 520px 97px no-repeat, url(img/Subtract_2.png) 716px 198px no-repeat, url(img/Ellipse_4.svg) 551px 100px no-repeat;
+}
+
+.about__title {
+  max-width: 470px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 72px;
+  color: #fff;
+  margin: 0;
+  padding-top: 120px;
+}
+
+.about__class {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #A3B8CC;
+}
+
+.vallet h2 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  margin-top: 100px;
+}
+
+.vallet .coin {
+  margin-top: 60px;
+  height: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.vallet .coin__img {
+  position: relative;
+  margin-left: -7px;
+  z-index: auto;
+}
+
+.vallet .biorobo {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: #A3B8CC;
+  margin-top: 24px;
+}
+
+.vallet .check-link {
+  color: #FF7F22;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.vallet .check .checkbox-label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding-left: 19px;
+}
+
+.vallet .check .checkbox-label input[type=checkbox] {
+  appearance: none;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  outline: none;
+  transition: 0.3s ease;
+  background: url(img/CheckNormal.svg) no-repeat;
+  cursor: pointer;
+}
+
+.vallet .check .checkbox-label input[type=checkbox]:checked {
+  background-image: url(img/CheckActive.svg);
+}
+
+.vallet .check .checkbox-label input[type=checkbox]:active {
+  background-image: url(img/CheckActive.svg);
+}
+
+.vallet .check .checkbox-label input[type=checkbox]:hover {
+  filter: brightness(80%);
+}
+
+.vallet .check .checkbox-label input[type=checkbox]:disabled {
+  cursor: default;
+  background-image: url(img/CheckDis.svg);
+}
+
+.market h2 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  margin-top: 104px;
+}
+
+.market .buttons__market {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.market .buttons__market.accessories__biomeh {
+  display: flex;
+}
+
+.market .buttons__market .biomeh__icon {
+  width: 236px;
+  height: 128px;
+  background: url(img/biomehIcon.png) no-repeat center;
+  filter: drop-shadow(0px 8px 30px #FF7F22);
+  margin: 0 auto;
+}
+
+.market .buttons__market .cpu__icon {
+  width: 236px;
+  height: 128px;
+  background: url(img/CPUicon.png) no-repeat center;
+  filter: drop-shadow(0px 8px 30px #FF7F22);
+  margin: 0 auto;
+}
+
+.market .buttons__market .soul__icon {
+  position: relative;
+  width: 236px;
+  height: 128px;
+  background: url(img/Soulicon.png) no-repeat center;
+  filter: drop-shadow(0px 8px 30px #FF7F22);
+  margin: 0 auto;
+}
+
+.market .buttons__market .border {
+  width: 88px;
+  height: 88px;
+  position: absolute;
+  top: 14px;
+  left: 70px;
+  border: 3px solid #FF7F22;
+  border-radius: 50%;
+}
+
+.market .buttons__market h3 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.market .buttons__market .accessories__price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #A3B8CC;
+  margin: auto;
+  padding-bottom: 24px;
+}
+
+.market .buttons__market .market7 {
+  display: inline-block;
+  width: 200px;
+  height: 48px;
+  margin: auto;
+  padding: 0;
+  border: none;
+  border-radius: 60px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #e68c4c;
+  background-image: linear-gradient(#FF7F22, #FF5722);
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+}
+
+.market .buttons__market .market7:hover {
+  background-image: none;
+  transition: all 0.7s;
+  background-color: #FF5722;
+}
+
+.market .buttons__market .market7:active {
+  background-image: none;
+  background-color: #FF7F22;
+  color: #fff;
+}
+
+.market .buttons__market .market7:disabled {
+  background-image: none;
+  background-color: #4C5865;
+  color: #7D90A6;
+}
+
+.market .buttons__market .market5 {
+  display: inline-block;
+  width: 200px;
+  height: 48px;
+  margin: auto;
+  padding: 0;
+  border: none;
+  border-radius: 60px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #e68c4c;
+  background-image: linear-gradient(#FF7F22, #FF5722);
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+}
+
+.market .buttons__market .market5:hover {
+  background-image: none;
+  transition: all 0.7s;
+  background-color: #FF5722;
+}
+
+.market .buttons__market .market5:active {
+  background-image: none;
+  background-color: #FF7F22;
+  color: #fff;
+}
+
+.market .buttons__market .market5:disabled {
+  background-image: none;
+  background-color: #4C5865;
+  color: #7D90A6;
+}
+
+.market .buttons__market .market25 {
+  display: inline-block;
+  width: 200px;
+  height: 48px;
+  margin: auto;
+  padding: 0;
+  border: none;
+  border-radius: 60px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #e68c4c;
+  background-image: linear-gradient(#FF7F22, #FF5722);
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+}
+
+.market .buttons__market .market25:hover {
+  background-image: none;
+  transition: all 0.7s;
+  background-color: #FF5722;
+}
+
+.market .buttons__market .market25:active {
+  background-image: none;
+  background-color: #FF7F22;
+  color: #fff;
+}
+
+.market .buttons__market .market25:disabled {
+  background-image: none;
+  background-color: #4C5865;
+  color: #7D90A6;
+}
+
+.stock h2 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  margin-top: 100px;
+}
+
+.stock .buttons__stock {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.stock .buttons__stock.stock__biomeh {
+  display: flex;
+}
+
+.stock .buttons__stock h3 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.stock .buttons__stock .stock__price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #A3B8CC;
+  margin: auto;
+  padding-bottom: 24px;
+  padding-bottom: 15px;
+}
+
+.stock .buttons__stock .thing {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  margin: auto;
+  padding-bottom: 24px;
+}
+
+.stock .buttons__stock .sale5 {
+  display: inline-block;
+  width: 200px;
+  height: 48px;
+  margin: auto;
+  padding: 0;
+  border: 2px solid;
+  border-radius: 60px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #7CDAF9;
+  background-color: transparent;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+}
+
+.stock .buttons__stock .sale5:hover {
+  background-image: none;
+  transition: all 0.7s;
+  background-color: #7CDAF9;
+  color: #212529;
+  border: none;
+}
+
+.stock .buttons__stock .sale5:active {
+  background-image: none;
+}
+
+.stock .buttons__stock .sale5:disabled {
+  background-image: none;
+  color: #4C5865;
+}
+
+.stock .buttons__stock .sale3 {
+  display: inline-block;
+  width: 200px;
+  height: 48px;
+  margin: auto;
+  padding: 0;
+  border: 2px solid;
+  border-radius: 60px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #7CDAF9;
+  background-color: transparent;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+}
+
+.stock .buttons__stock .sale3:hover {
+  background-image: none;
+  transition: all 0.7s;
+  background-color: #7CDAF9;
+  color: #212529;
+  border: none;
+}
+
+.stock .buttons__stock .sale3:active {
+  background-image: none;
+}
+
+.stock .buttons__stock .sale3:disabled {
+  background-image: none;
+  color: #4C5865;
+}
+
+.stock .buttons__stock .sale15 {
+  display: inline-block;
+  width: 200px;
+  height: 48px;
+  margin: auto;
+  padding: 0;
+  border: 2px solid;
+  border-radius: 60px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #7CDAF9;
+  background-color: transparent;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+}
+
+.stock .buttons__stock .sale15:hover {
+  background-image: none;
+  transition: all 0.7s;
+  background-color: #7CDAF9;
+  color: #212529;
+  border: none;
+}
+
+.stock .buttons__stock .sale15:active {
+  background-image: none;
+}
+
+.stock .buttons__stock .sale15:disabled {
+  background-image: none;
+  color: #4C5865;
+}
+
+.production h2 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  margin-top: 100px;
+}
+
+.production h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  margin: auto;
+  padding-top: 16px;
+}
+
+.production .type__biorobo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  flex: 0 1 2;
+}
+
+.production .buttons__type {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  padding-top: 16px;
+  width: 236px;
+}
+
+.production label {
+  padding-left: 10px;
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+.production .meh img {
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.production .cpu1 img {
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.production .soul1 img {
+  margin-bottom: 61px;
+  cursor: pointer;
+}
+
+.production .buttons__pictures {
+  width: 236px;
+}
+
+.production .man {
+  width: 236px;
+  height: 320px;
+}
+
+.production .production__button {
+  margin-top: 77px;
+}

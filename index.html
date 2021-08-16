@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styleScss.css">
+    <title>Biorobot</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <img src="img/Logo.svg" alt="Logo" class="logo">
+            <p></p>
+        </header>
+        <div class="content">
+            <div class="about">
+                <h1 class="about__title">Фабрика по производству биороботов  </h1>
+                <p class="about__class">класса «монитор-кресло»</p>
+            </div>
+            <div class="vallet">
+                <h2>Кошелёк криптовалют</h2>
+                <div class="coin"></div>
+                <div class="biorobo"><span class="coins">0</span> biorobo <span class='text_form'>монет</span></div>
+                <div class="check">
+                    <a class="check-link" href="" >Нацыганить</a>
+                    <label class="checkbox-label">
+                    <input type="checkbox" name="5coins">
+                    Цыганить по 5 монет</label>
+                </div>
+            </div>
+            <div class="market">
+                <h2>Рынок комплектующих</h2>
+        
+                <div class="buttons__market">
+                    <div class="accessories__biomeh">
+                        <div class="biomeh__icon"></div>
+                        <h3 class="accessories__title">Биомеханизм</h3>
+                        <p class="accessories__price">Стоимость: 7 монет</p>
+                        <button class="market7" disabled>Установить</button>
+                    </div>
+                    
+                    <div class="accessories__cpu">
+                        <div class="cpu__icon"></div>
+                        <h3 class="accessories__title">Процессор</h3>
+                        <p class="accessories__price">Стоимость: 5 монет</p>
+                        <button class="market5" disabled>Установить</button>
+                    </div>
+                    
+                    <div class="accessories__soul">
+                        <div class="soul__icon circle"><div class="border"></div></div>
+                        <h3 class="accessories__title">Душа</h3>
+                        <p class="accessories__price">Стоимость: 25 монет</p>
+                        <button class="market25" disabled>Установить</button>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="stock">
+                <h2>Склад</h2>
+
+                <div class="buttons__stock">
+                    <div class="stock__biomeh">
+                        <h3 class="stock__title">Биомеханизм</h3>
+                        <p class="stock__price">Стоимость: 5 монет</p>
+                        <p class="thing"><span class='thing5'> 0 </span> шт</p>
+                        <button class="sale5" disabled> Продать </button>
+                    </div>
+                    <div class="stock__cpu">
+                        <h3 class="stock__title">Процессор</h3>
+                        <p class="stock__price">Стоимость: 3 монеты</p>
+                        <p class="thing"><span class='thing3'> 0 </span> шт</p>
+                        <button class="sale3" disabled> Продать </button>
+                    </div>
+                    <div class="stock__soul">
+                        <h3 class="stock__title">Душа</h3>
+                        <p class="stock__price">Стоимость: 15 монет</p>
+                        <p class="thing"><span class='thing15'> 0 </span> шт</p>
+                        <button class="sale15" disabled > Продать</button>
+                    </div>
+                </div>
+            </div>
+           <div class="production">
+               <h2>Производство</h2>
+               <div class="type__biorobo">
+                   <div class="type__radio">
+                        <h3>Тип биоробота:</h3>
+                        <div class="buttons__type">
+                            <input id ="button__frontend" name="question-one" type="radio" value="frontend">
+                            <label for="button__frontend" class="label__frontend">FrontEnd</label>
+                            <input id ="button__design" name="question-one" type="radio" value="design">
+                            <label for="button__design" class="label__design">Design</label>
+                        </div>
+                        <h3>Cтабилизатор:</h3>
+                        <div class="buttons__type">
+                            <input id ="button__male" name="question-two" type="radio" value="male">
+                            <label for="button__male" class="label__male">Male</label>
+                            <input id ="button__famale" name="question-two" type="radio" value="female">
+                            <label for="button__famale" class="label__famale">Famale</label>
+                        </div>
+                        <button class="production__button" disabled>Произвести за 10 монет</button>
+                   </div>
+                    <div class="prod__pic">
+                        <div class="buttons__pictures">
+                            <div class="meh">
+                                <img src="img/mehDesable.png" alt="" class="device">
+                                <img src="img/mehDesable.png" alt="" class="device">
+                                <img src="img/mehDesable.png" alt="" class="device">
+                                <img src="img/mehDesable.png" alt="" class="device">
+                            </div>
+                            
+                            <div class="cpu1">
+                                <img src="img/CpuDesable.png" alt="" class="cpu">
+                                <img src="img/CpuDesable.png" alt="" class="cpu">
+                                <img src="img/CpuDesable.png" alt="" class="cpu">
+                                <img src="img/CpuDesable.png" alt="" class="cpu">
+                            </div>
+                           
+                            <div class="soul1">
+                                <img src="img/SoulDesable.png" alt="" class="soul">
+                            </div>
+
+                            <div class="production__text"></div>
+                        </div>
+                    </div>
+                        
+                    <div class="man"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    
+    <script src="script.js"></script>
+</body>
+</html>
